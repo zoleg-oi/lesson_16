@@ -20,5 +20,5 @@ async def admin():
 
 
 @app.get("/user/{item_id}")
-async def read_item(item_id: int):
+async def read_item(item_id: int) -> dict:
     return f'Вы вошли как пользователь : {item_id}'
